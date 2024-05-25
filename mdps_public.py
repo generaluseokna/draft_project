@@ -15,10 +15,12 @@ diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Diabetes Prediction',
+   selected = option_menu('disease detection',
+                          
+                          [''
+                           ],
                           icons=['activity'],
                           default_index=0)
-    
     
 # Diabetes Prediction Page
 if (selected == 'Diabetes Prediction'):
